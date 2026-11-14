@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b16"><title>DADA FANTER — Latest APK</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;color:#f4f8ff;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 50% 15%,#102b50 0,#090f20 42%,#050811 100%)}
+.panel{width:min(100%,420px);text-align:center;padding:36px 25px;border:1px solid #1b9bdb;border-radius:24px;background:rgba(8,17,34,.94);box-shadow:0 0 28px rgba(0,174,255,.20),inset 0 0 22px rgba(0,174,255,.05)}
+.crown{font-size:42px;margin-bottom:12px}h1{margin:0;letter-spacing:2px;font-size:29px}.tag{color:#55caff;margin:10px 0 28px;font-size:13px;letter-spacing:3px}p{color:#b9c8dc;line-height:1.6;margin:0 0 22px}
+.download{display:block;width:100%;padding:16px 18px;border-radius:13px;color:#03111c;background:linear-gradient(90deg,#37d5ff,#55aaff);font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 0 20px rgba(55,213,255,.25)}
+.meta{margin-top:17px;color:#8297b2;font-size:12px}#status{margin-top:18px;font-size:13px;color:#9cc9df}
+</style></head><body><main class="panel"><div class="crown">👑</div><h1>DADA FANTER</h1><div class="tag">OFFICIAL ANDROID APP</div><p>Download the newest DADA FANTER APK.</p><a id="download" class="download" href="https://github.com/ulfatullah1688-wq/DADA-FANTER-APP/releases/latest" target="_blank" rel="noopener">OPEN LATEST RELEASE</a><div id="version" class="meta">Checking latest version…</div><div id="status" aria-live="polite"></div></main>
+<script>
+(async function(){
+ const btn=document.getElementById('download'),version=document.getElementById('version'),status=document.getElementById('status');
+ try{
+  const r=await fetch('https://api.github.com/repos/ulfatullah1688-wq/DADA-FANTER-APP/releases/latest',{headers:{'Accept':'application/vnd.github+json'}});
+  if(!r.ok) throw new Error(r.status===404?'No published release or APK found yet.':'Could not check latest release.');
+  const release=await r.json();
+  const apk=(release.assets||[]).find(a=>(a.name||'').toLowerCase().endsWith('.apk'));
+  if(!apk) throw new Error('Latest release has no APK file.');
+  btn.href=apk.browser_download_url;btn.textContent='⬇ DOWNLOAD LATEST APK';
+  version.textContent=(release.name||release.tag_name||'Latest version')+' · '+apk.name;
+  status.textContent='Latest APK ready';
+ }catch(e){version.textContent='DADA FANTER APK';status.textContent=e.message+' You can open the Releases page using the button above.';}
+})();
+</script></body></html>
