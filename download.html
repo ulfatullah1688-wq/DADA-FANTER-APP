@@ -5,19 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#061426">
-<meta name="description" content="Download the official DADA FANTER Android app, version 7.8.">
+<meta name="description" content="Download the official DADA FANTER Android app, version 7.9.">
 <title>DADA FANTER — Official Download</title>
 
 <style>
-*{
-  box-sizing:border-box;
-}
-
-html,body{
-  margin:0;
-  min-height:100%;
-}
-
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
 body{
   min-height:100vh;
   display:flex;
@@ -26,13 +19,8 @@ body{
   padding:28px 6%;
   color:#eef6ff;
   font-family:Arial,Helvetica,sans-serif;
-  background:
-    radial-gradient(ellipse at 50% 38%,
-    #082b49 0%,
-    #061a30 46%,
-    #020918 100%);
+  background:radial-gradient(ellipse at 50% 38%,#082b49 0%,#061a30 46%,#020918 100%);
 }
-
 .panel{
   width:100%;
   max-width:610px;
@@ -41,21 +29,11 @@ body{
   flex-direction:column;
   align-items:center;
   text-align:center;
-
   border:1px solid #087c9c;
   border-radius:38px;
-
-  background:
-    linear-gradient(155deg,
-    rgba(7,34,58,.96),
-    rgba(3,17,35,.98) 70%,
-    rgba(2,13,29,.98));
-
-  box-shadow:
-    0 0 34px rgba(0,196,255,.13),
-    inset 0 0 28px rgba(0,175,235,.035);
+  background:linear-gradient(155deg,rgba(7,34,58,.96),rgba(3,17,35,.98) 70%,rgba(2,13,29,.98));
+  box-shadow:0 0 34px rgba(0,196,255,.13),inset 0 0 28px rgba(0,175,235,.035);
 }
-
 .logo{
   width:min(100%,280px);
   aspect-ratio:1;
@@ -63,14 +41,12 @@ body{
   display:block;
   margin:0 auto 20px;
 }
-
 h1{
   font-size:clamp(30px,7.4vw,48px);
   font-weight:700;
   letter-spacing:1px;
   margin:0 0 10px;
 }
-
 .sub{
   margin:0 0 30px;
   color:#00d9ff;
@@ -78,7 +54,6 @@ h1{
   font-weight:700;
   letter-spacing:4px;
 }
-
 .version{
   display:inline-block;
   margin:0 0 30px;
@@ -90,14 +65,12 @@ h1{
   font-weight:700;
   background:rgba(0,119,160,.10);
 }
-
 .desc{
   margin:0 0 35px;
   color:#9eb5ce;
   font-size:18px;
   line-height:1.7;
 }
-
 .download{
   width:100%;
   min-height:82px;
@@ -106,125 +79,60 @@ h1{
   justify-content:center;
   gap:16px;
   padding:20px;
-
   border-radius:22px;
   text-decoration:none;
   color:#001426;
-
   font-size:clamp(20px,4.3vw,28px);
   font-weight:700;
-
-  background:
-    linear-gradient(100deg,#05d4e8,#078bff);
-
-  box-shadow:
-    0 0 30px rgba(0,181,255,.24);
-
+  background:linear-gradient(100deg,#05d4e8,#078bff);
+  box-shadow:0 0 30px rgba(0,181,255,.24);
   transition:transform .2s,box-shadow .2s;
 }
-
 .download:hover{
   box-shadow:0 0 40px rgba(0,181,255,.40);
   transform:translateY(-2px);
 }
-
-.download:active{
-  transform:scale(.985);
-}
-
+.download:active{transform:scale(.985)}
 .download svg{
   width:28px;
   height:28px;
   flex:none;
   fill:#001426;
 }
-
 .meta{
   margin:25px 0 0;
   color:#718ba8;
   font-size:15px;
 }
-
 .footer{
   margin-top:42px;
   color:#718ba8;
   font-size:15px;
   letter-spacing:2px;
 }
-
 @media(max-width:480px){
-
-  body{
-    padding:24px 5%;
-  }
-
-  .panel{
-    padding:35px 22px;
-    border-radius:30px;
-  }
-
-  .logo{
-    width:min(100%,240px);
-    margin-bottom:18px;
-  }
-
-  h1{
-    font-size:32px;
-  }
-
-  .sub{
-    letter-spacing:3px;
-    margin-bottom:26px;
-  }
-
-  .version{
-    font-size:16px;
-    padding:12px 22px;
-    margin-bottom:24px;
-  }
-
-  .desc{
-    font-size:16px;
-    margin-bottom:30px;
-  }
-
-  .download{
-    min-height:75px;
-    border-radius:18px;
-    gap:12px;
-  }
-
-  .meta{
-    font-size:14px;
-    margin-top:22px;
-  }
-
-  .footer{
-    font-size:14px;
-    padding-top:35px;
-  }
+  body{padding:24px 5%}
+  .panel{padding:35px 22px;border-radius:30px}
+  .logo{width:min(100%,240px);margin-bottom:18px}
+  h1{font-size:32px}
+  .sub{letter-spacing:3px;margin-bottom:26px}
+  .version{font-size:16px;padding:12px 22px;margin-bottom:24px}
+  .desc{font-size:16px;margin-bottom:30px}
+  .download{min-height:75px;border-radius:18px;gap:12px}
+  .meta{font-size:14px;margin-top:22px}
+  .footer{font-size:14px;padding-top:35px}
 }
 </style>
 </head>
-
 <body>
-
 <main class="panel">
 
-  <!-- DADA FANTER LOGO -->
-  <img
-    class="logo"
-    src="DF-LOGO.png"
-    alt="DADA FANTER DF Logo"
-  >
+  <img class="logo" src="DF-LOGO.png" alt="DADA FANTER DF Logo">
 
   <h1>DADA FANTER</h1>
-
   <p class="sub">AI PROMPT STUDIO</p>
 
-  <div class="version">
-    👑 VERSION 7.8
-  </div>
+  <div class="version">👑 VERSION 7.9</div>
 
   <p class="desc">
     ✨ Explore amazing AI photo prompts and cinematic video ideas.
@@ -236,23 +144,15 @@ h1{
     🚀 Dream Big... Create More...
   </p>
 
-  <!-- DOWNLOAD APK -->
-  <a
-    class="download"
-    href="https://github.com/ulfatullah1688-wq/DADA-FANTER-APP/releases/download/v7.8/DADA-FANTER-7.8.apk"
-  >
-
+  <a class="download"
+     href="https://github.com/ulfatullah1688-wq/DADA-FANTER-APP/releases/download/v7.9/DADAFANTER.5.apk">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M5 20h14v-2H5v2zm7-18v10.17l3.59-3.58L17 10l-5 5-5-5 1.41-1.41L11 12.17V2h1z"/>
     </svg>
-
     DOWNLOAD APK
-
   </a>
 
-  <p class="meta">
-    📱 Android Application · 8.97 MB
-  </p>
+  <p class="meta">📱 Android Application · 8.52 MB</p>
 
   <div class="footer">
     👑 DADA FANTER
@@ -261,6 +161,5 @@ h1{
   </div>
 
 </main>
-
 </body>
 </html>
